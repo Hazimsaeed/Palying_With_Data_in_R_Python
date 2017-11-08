@@ -109,9 +109,8 @@ print("\n\t\tAverage:", find_average(data_from_csv, True))
 
 # The Max and the Min Tie prices
 from numpy_utils import numpy_max, numpy_min
-print("(Numpy) Highest Priced Tie: $", numpy_max(price_in_float), "// Lowest Priced Tie: $", numpy_min(price_in_float) )
-
-
+print("(Numpy) Highest Priced Tie: $", numpy_max(price_in_float), 
+	"// Lowest Priced Tie: $", numpy_min(price_in_float) )
 ```
 
 ### Output Screenshot
