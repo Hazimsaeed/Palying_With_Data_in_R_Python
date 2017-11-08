@@ -114,7 +114,7 @@ print("(Numpy) Highest Priced Tie: $", numpy_max(price_in_float), "// Lowest Pri
 
 ```
 
-## Output Screenshot
+### Output Screenshot
 
 
 ![Alt text](/img/01.jpg)
@@ -188,7 +188,7 @@ print("\n\t\tFound ", len(over_100_dollars), " ties < $100")
 
 ```
 
-## Output Screenshot
+### Output Screenshot
 
 
 ![Alt text](/img/02.jpg)
@@ -233,7 +233,7 @@ print("Avg Stripes $", avg_striped_ties)
 print("Avg Solid $", avg_solid_ties)
 ```
 
-## Output Screenshot
+### Output Screenshot
 
 
 ![Alt text](/img/03.jpg)
@@ -269,7 +269,7 @@ from my_utils import write_min_max_csv, write_two_cols, write_append_file
 write_min_max_csv('data/write_min_max.csv', hermes_ties[1:])
 
 ```
-## Output Screenshot
+### Output Screenshot
 
 
 ![Alt text](/img/04.jpg)
@@ -305,7 +305,7 @@ from my_utils import save_spreadsheet
 save_spreadsheet('data/kiton.xlsx', kiton_ties)
 
 ```
-## Output Screenshot
+### Output Screenshot
 
 
 ![Alt text](/img/05.jpg)
@@ -335,7 +335,7 @@ create_line_chart(hermes_ties[1:], "Distribution of Prices for Hermes Ties", "ch
 print(".\n\t line_hermes.png created")
 
 ```
-## Output Screenshot
+### Output Screenshot
 
 
 ![Alt text](/img/06.jpg)
@@ -365,7 +365,7 @@ create_bar_chart(price_groups, "_charts/price_in_groups.png")
 
 ```
 
-## Output Screenshot
+### Output Screenshot
 
 
 ![Alt text](/img/07.jpg)
@@ -413,7 +413,7 @@ create_table(brand_and_price_data, price_groups, brands, columns, "_charts/price
 print("created _charts/prices_in_table.png")
 
 ```
-## Output Screenshot
+### Output Screenshot
 
 
 ![Alt text](/img/08.jpg)
@@ -439,7 +439,7 @@ for x in my_list:
 
 ```
 
-## Output Screenshot
+### Output Screenshot
 
 
 ![Alt text](/img/09.jpg)
@@ -476,7 +476,7 @@ pp.close()
 
 ```
 
-## Output Screenshot
+### Output Screenshot
 
 
 ![Alt text](/img/10.jpg)
