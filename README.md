@@ -121,9 +121,9 @@ print("(Numpy) Highest Priced Tie: $", numpy_max(price_in_float), "// Lowest Pri
 
 
 
-* 3.Stage three: Cleaning data
+3. Stage three: Cleaning data
  
-	* A. Cleaning Data
+ A. Cleaning Data
 	
 ```R
 #R code:
@@ -148,7 +148,7 @@ print("Filtering for correct count...")
 number_cashmere_ties = filter_col_by_bool(my_improved_csv, 11)
 ```
 
-	* B. Filtering Rows
+ B. Filtering Rows
 	
 ```R
 #R code:
@@ -240,8 +240,10 @@ print("Avg Solid $", avg_solid_ties)
 
 	
 	
-* 4. Stage four: Exporting
-	* A.Exporting CSV Files
+4. Stage four: Exporting
+
+ A. Exporting CSV Files
+ 
 ```R
 #R code:
 
@@ -275,7 +277,7 @@ write_min_max_csv('data/write_min_max.csv', hermes_ties[1:])
 ![Alt text](/img/04.jpg)
 
 
-	* B.Exporting to Excel
+ B. Exporting to Excel
 	
 ```R
 #R code:
@@ -311,8 +313,9 @@ save_spreadsheet('data/kiton.xlsx', kiton_ties)
 ![Alt text](/img/05.jpg)
 
 	
-* 5. Stage five: Charts and Tables
-	* A. Line Charts
+5. Stage five: Charts and Tables
+
+ A. Line Charts
 
 ```R
 #R code:
@@ -340,7 +343,7 @@ print(".\n\t line_hermes.png created")
 
 ![Alt text](/img/06.jpg)
 
-	B. Bar Charts
+ B. Bar Charts
 
 ```R
 #R code:
@@ -371,7 +374,7 @@ create_bar_chart(price_groups, "_charts/price_in_groups.png")
 ![Alt text](/img/07.jpg)
 
 
-	C. Tables
+ C. Tables
 	
 ```R
 #R code:
@@ -418,7 +421,7 @@ print("created _charts/prices_in_table.png")
 
 ![Alt text](/img/08.jpg)
 
-	D. List Avg of list of brands and the min tie price for each brand
+ D. List Avg of list of brands and the min tie price for each brand
 
 ```R
 #R code:
@@ -444,7 +447,7 @@ for x in my_list:
 
 ![Alt text](/img/09.jpg)
 
-6. Stage 6: Creating Reports, Export a chart as image, Edit title and axes labels
+6. Stage six Creating Reports, Export a chart as image, Edit title and axes labels
 
 ```R
 #R code:
