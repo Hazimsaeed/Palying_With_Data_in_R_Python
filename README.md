@@ -14,12 +14,12 @@ The final Stage, Stage six I export some graphs to a PDF file as a report and I 
 ## Requirment:
 
 
-for the R project I uesed R version 3.4.2 and installed the following packages:
+for the R project I uesed `R version 3.4.2` and installed the following packages:
 
 	1- xlsx -- to export to excel.
 	2- ggplot2 -- to plot table.
 	
-for the python project I uesed Python version 3.0.1 and installed the following packages:
+for the python project I uesed `Python version 3.0.1` and installed the following packages:
 
 	1- numpy
 	2- matplotlib
