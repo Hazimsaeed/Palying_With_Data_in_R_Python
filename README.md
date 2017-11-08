@@ -133,7 +133,8 @@ cat("\t",sum(as.numeric(my_improved_csv)), "ties made with cashmere")
 
 # add boolean fields
 number_cashmere_ties = data_from_csv[my_improved_csv,11]
-cat("\tFiltering for correct count by counting boolean fields:\n\t",length( number_cashmere_ties),"ties made with cashmere")
+cat("\tFiltering for correct count by counting boolean fields:\n\t",
+	length( number_cashmere_ties),"ties made with cashmere")
 ```
 
 ```python
@@ -256,8 +257,9 @@ write.csv(hermes_ties[which(hermes_ties$priceLabel == max(hermes_ties$priceLabel
                       './data/min_max.csv', row.names = FALSE)
 # bind jcrew max and min price to existing CSV		  
 write.csv(rbind(read.csv('./data/min_max.csv'), jcrew_ties[
-		which(jcrew_ties$priceLabel == max(jcrew_ties$priceLabel) | jcrew_ties$priceLabel == min(jcrew_ties$priceLabel)),]),
-			'./data/min_max.csv', row.names = FALSE)
+		which(jcrew_ties$priceLabel == max(jcrew_ties$priceLabel) | 
+			jcrew_ties$priceLabel == min(jcrew_ties$priceLabel)),]),
+				'./data/min_max.csv', row.names = FALSE)
 ```	
 
 ```python
@@ -322,7 +324,8 @@ save_spreadsheet('data/kiton.xlsx', kiton_ties)
 png("./charts/line_hermes.png")
 #plot chart into png file  
 plot(sort(hermes_ties$priceLabel), type = 's,S', 
-     main ="Distribution of Prices for Hermes Ties", xlab = 'Tie Price ($)', ylab = 'Number of Ties', col = 'blue', lwd = 2)
+     main ="Distribution of Prices for Hermes Ties", xlab = 'Tie Price ($)', 
+     				ylab = 'Number of Ties', col = 'blue', lwd = 2)
 # To write the ploting in the .png file	 
 dev.off()
 
@@ -351,8 +354,9 @@ columns = c("$0-50", "$50-100", "$100-150", "$150-200", "$200-250", "$250+")
 #craete price_in_groups.png to handel the chart
 png("./charts/price_in_groups.png")
 #plot chart into png file
-barplot(table(cut(data_from_csv$priceLabel, breaks = c(seq(0, 250, by = 50), Inf), labels = columns)),  main ="Distribution of Prices for all Ties by ranges", 
-        xlab = 'Tie Prices in groups ($)', ylab = 'Number of Ties', col = 1:6)
+barplot(table(cut(data_from_csv$priceLabel, breaks = c(seq(0, 250, by = 50), Inf), labels = columns)), 
+		main ="Distribution of Prices for all Ties by ranges", xlab = 'Tie Prices in groups ($)', 
+									ylab = 'Number of Ties', col = 1:6)
 # write the ploting in the .png file
 dev.off()
 
@@ -392,7 +396,8 @@ columns = c("$0-50", "$50-100", "$100-150", "$150-200", "$200-250", "$250+")
 # select the brandName and priceLabel and put them in variable
 brand_and_price_data = (data_from_csv[, c("brandName", "priceLabel")])
 # select the quintaty or ties base in the group of prices
-brand_and_price_data$priceLabel <- cut(brand_and_price_data$priceLabel, breaks = c(seq(0, 250, by = 50), Inf), labels = columns)
+brand_and_price_data$priceLabel <- cut(brand_and_price_data$priceLabel, 
+					breaks = c(seq(0, 250, by = 50), Inf), labels = columns)
 t <- table(brand_and_price_data$brandName, brand_and_price_data$priceLabel)
 #craete table.png to handel the chart
 png("./charts/table.png", height=3700, width=600)
@@ -427,7 +432,8 @@ print("created _charts/prices_in_table.png")
 
 my_list = c("Burberry", "Dolce & Gabbana", "Gucci", "Yves Saint Laurent")
 for (x in my_list){
-  cat(paste("\n\t\tBrand:", x, "\n\t\t\tAvg$:", mean(data_from_csv[which(data_from_csv$brandName == x), "priceLabel"]), "\n\t\t\tMin:$", min(data_from_csv[which(data_from_csv$brandName == x), "priceLabel"])))
+  cat(paste("\n\t\tBrand:", x, "\n\t\t\tAvg$:", mean(data_from_csv[which(data_from_csv$brandName == x),
+  "priceLabel"]), "\n\t\t\tMin:$", min(data_from_csv[which(data_from_csv$brandName == x), "priceLabel"])))
 }
 
 ```
@@ -453,13 +459,15 @@ for x in my_list:
 
 pdf("./charts/report.pdf")
 plot(sort(hermes_ties$priceLabel), type = 'l', 
-     main ="Chart1. \nDistribution of Prices for Hermes Ties", xlab = 'Tie Price ($)', ylab = 'Number of Ties', col = 'blue', lwd = 2)
+     main ="Chart1. \nDistribution of Prices for Hermes Ties", xlab = 'Tie Price ($)', 
+     					ylab = 'Number of Ties', col = 'blue', lwd = 2)
 plot(data_from_csv$priceLabel,  main ="Chart2. \nDistribution of Prices for all Ties", 
-     xlab = 'Tie Price ($)', ylab = 'Number of Prices', type = 'h')
-barplot(table(cut(data_from_csv$priceLabel, breaks = c(seq(0, 250, by = 50), Inf), labels = columns)),  main ="Chart 3. \nDistribution of Prices for all Ties by ranges", 
-        xlab = 'Tie Price ($)', ylab = 'Number of Ties', col = 1:6)
+    			 xlab = 'Tie Price ($)', ylab = 'Number of Prices', type = 'h')
+barplot(table(cut(data_from_csv$priceLabel, breaks = c(seq(0, 250, by = 50), Inf), 
+	labels = columns)),  main ="Chart 3. \nDistribution of Prices for all Ties by ranges", 
+        			   xlab = 'Tie Price ($)', ylab = 'Number of Ties', col = 1:6)
 dev.off()
-}
+
 ```
 ```python
 #Python code:
