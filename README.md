@@ -29,7 +29,7 @@ for the python project I installed the following packages:
 I will try to explain the project stages by highlighting code blocks, so it will be fun to compare R code with Python code.
 Note: R code and Python code give same output.
   
-* 1. Stage one: set working dir and global output formate and import requier library
+1. Stage one: set working dir and global output formate and import requier library
 
 
 ```R
@@ -46,9 +46,9 @@ from my_utils import open_with_csv
 from numpy_utils import load_data
 ```
 
-* 2. Stage two: Describing Data
+2. Stage two: Describing Data
 
-	* A. Loading raw data into data structure(s)
+ A. Loading raw data into data structure(s)
 	
 ```R
 #R code:
@@ -65,7 +65,7 @@ my_csv = load_data(sample_file)
 ```	
 
 
-	* B. Calculate descriptive Stats Max, Min, Median, Mean, Sums and Totals
+ B. Calculate descriptive Stats Max, Min, Median, Mean, Sums and Totals
 		
 
 	
