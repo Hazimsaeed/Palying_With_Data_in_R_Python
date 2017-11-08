@@ -48,7 +48,7 @@ from numpy_utils import load_data
 
 2. Stage two: Describing Data
 
- 		A. Loading raw data into data structure(s)
+      A. Loading raw data into data structure(s)
 	
 ```R
 #R code:
@@ -65,7 +65,7 @@ my_csv = load_data(sample_file)
 ```	
 
 
- 		B. Calculate descriptive Stats Max, Min, Median, Mean, Sums and Totals
+   B. Calculate descriptive Stats Max, Min, Median, Mean, Sums and Totals
 		
 
 	
