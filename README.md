@@ -29,7 +29,7 @@ for the python project I installed the following packages:
 I will try to explain the project stages by highlighting code blocks, so it will be fun to compare R code with Python code.
 Note: R code and Python code give same output.
   
-1. Stage one: set working dir and global output formate and import requier library
+Markup : 1. Stage one: set working dir and global output formate and import requier library
 
 
 ```R
@@ -48,7 +48,7 @@ from numpy_utils import load_data
 
 2. Stage two: Describing Data
 
-	A. Loading raw data into data structure(s)
+		A. Loading raw data into data structure(s)
 	
 ```R
 #R code:
@@ -65,7 +65,7 @@ my_csv = load_data(sample_file)
 ```	
 
 
- B. Calculate descriptive Stats Max, Min, Median, Mean, Sums and Totals
+		B. Calculate descriptive Stats Max, Min, Median, Mean, Sums and Totals
 		
 
 	
@@ -123,7 +123,7 @@ print("(Numpy) Highest Priced Tie: $", numpy_max(price_in_float), "// Lowest Pri
 
 3.Stage three: Cleaning data
  
-	A. Cleaning Data
+		A. Cleaning Data
 	
 ```R
 #R code:
@@ -148,7 +148,7 @@ print("Filtering for correct count...")
 number_cashmere_ties = filter_col_by_bool(my_improved_csv, 11)
 ```
 
-	B. Filtering Rows
+		B. Filtering Rows
 	
 ```R
 #R code:
@@ -241,7 +241,7 @@ print("Avg Solid $", avg_solid_ties)
 	
 	
 4. Stage four: Exporting
-	A.Exporting CSV Files
+		A.Exporting CSV Files
 ```R
 #R code:
 
