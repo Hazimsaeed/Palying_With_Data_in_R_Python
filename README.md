@@ -3,33 +3,34 @@
 
 ## Introduction
 
-In this project I tried to go throw the data science most important functions in R and python language. 
-The data set used in this project is about Ties. The data set has different brand and type of ties each tie had its own attribute such as price, name, material …etc. All the information about ties is store as CSV file. 
-This project has six Stages.
-The first stage is loading the CSV data set. In Stage two I tried to describe the data by reading the header of the data set to know the description provided, then show the length of the data by counting rows. After that I print the total value of the ties by summation the prices of all ties in the data set. Additionally, I calculate the average price of all ties, then I calculated the average price of the first half of the data set and the second half of the data set.
-In the second stage I calculated the Highest Priced and Lowest Priced, to know what most expensive tie is and what the cheapest tie is. In the third stage also I cleaned the data by adding Boolean field, then I filter the data base on the brand name, material and prices. Finally, in this stage I grouped the data by calculating the highest price for specific brands and the average price by type using grepl function in R and of course numpy in python. Stage four I used different type and method to export data sets in different shape, type and style. In stage five I created different types of graphs form the data such as: Line, Bar, Tables graphs. I also listed all some brand average price with the lowest price to give idea if there is a discount for the brand.
-The final Stage, Stage six I export some graphs to a PDF file as a report and I edit the titles and axes labels.
+In this project, I attempted to go through a data set using important functions in R and python languages. The data set used in this project concerns a type of clothing item, namely ties. The data set records different brands and types of ties. Each tie has its own attributes, such as price, name, material etc. All the information is stored in a CSV file. 
+This project has six stages. The first stage is to load the CSV data set. 
+In stage two, I try to describe the data by reading the header of the data set to understand the description provided, then determine the volume of the data by counting rows. After this, I calculate the total value of the ties by undertaking a summation of the prices of all the ties in the data set. Additionally, I calculate the average price of the ties, then the average price of the first half of the data set, and the average price of the second half of the data set. In this second stage I further determine the highest priced and lowest priced, so that I know the price of the most and least expensive ties. 
+In the third stage, I cleaned the data by adding a Boolean field, then filter the data, based on the brand name, material and prices. Finally, in this stage I group the data by calculating the highest price for specific brands and the average price by type using the grepl function in R and numpy in python. 
+In stage four, I use different types and methods to export data sets in different shapes, types and styles. 
+In stage five, I create different types of graphs from the data, including: line, bar, tables and graphs. I also list the average price for each brand, along with the lowest price to provide an idea as to whether is a discount for the brand. 
+In the final stage, stage six, I export some graphs to a PDF file as a report, and edit the titles and axes labels.
 
 
-## Requirment:
+
+## Requirements:
 
 
-for the R project I uesed `R version 3.4.2` and installed the following packages:
+For the R project I used R version 3.4.2 and installed the following packages:
 
 	1- xlsx -- to export to excel.
 	2- ggplot2 -- to plot table.
 	
-for the python project I uesed `Python version 3.0.1` and installed the following packages:
+For the python project I used Python version 3.0.1 and installed the following packages:
 
 	1- numpy
 	2- matplotlib
 	
 
 ## Stages:
-I will try to explain the project stages by highlighting code blocks, so it will be fun to compare R code with Python code.
-Note: R code and Python code give same output.
+I will try to explain the project stages by highlighting code blocks, so it will be possible to compare R code with Python code. Note: R code and Python code give the same output.
   
-1. Stage one: set working dir and global output formate and import requier library
+1. Stage one: set working directory and global output format and import required library
 
 
 ```R
