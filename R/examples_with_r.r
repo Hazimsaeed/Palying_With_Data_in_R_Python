@@ -23,7 +23,7 @@
 #for the python project I installed the following packages:
 #1- numpy
 #2- matplotlib
-
+ 
 cat("\n Projects has four stages as below:\n")
 cat("\n\t>>>STAGE 1 \n")
 cat("\n\t>>>STAGE 2: Describing Data\n")
