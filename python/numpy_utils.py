@@ -8,7 +8,7 @@
 
 import numpy
 
-
+ 
 ## Stage 2 begin
 
 fieldNames = ['', 'id', 'priceLabel', 'name','brandId', 'brandName', 'imageLink',
