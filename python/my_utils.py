@@ -3,7 +3,7 @@
 # my_utils for Intro to Data Science with Python
 # Author: Kat Chuang
 # Created: Nov 2014
-
+ 
 # --------------------------------------
 ## Stage 2 begin
  
