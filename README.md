@@ -1,6 +1,6 @@
 # Project Name
 ## Palying With Data in Python and R
-
+ 
 ## Introduction
 
 In this project, I attempted to go through a data set using important functions in R and python languages. The data set used in this project concerns a type of clothing item, namely ties. The data set records different brands and types of ties. Each tie has its own attributes, such as price, name, material etc. All the information is stored in a CSV file. 
