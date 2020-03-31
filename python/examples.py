@@ -43,7 +43,7 @@ print("\t- set working dir and global output formate")
 # we're using these functions
 from my_utils import open_with_csv
 from numpy_utils import load_data
-
+ 
 
 print("\n>>>STAGE 2: Describing Data\n")
 print("\t- A. Loading raw data into data structure(s)\n")
