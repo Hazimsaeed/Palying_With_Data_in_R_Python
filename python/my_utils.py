@@ -17,7 +17,7 @@ def open_with_csv(filename, d='\t'):
         for row in tsvin:
             uuids.append(row)
     return uuids
-
+ 
 #2.a size
 def number_of_records(data_sample):
     return len(data_sample)
