@@ -23,7 +23,7 @@ def load_data(filename):
                             names=fieldNames, invalid_raise=False, 
                             dtype=dataTypes)
 	return my_csv
-
+ 
 #2.a count
 def size(my_csv):
 	print("Length (numpy): {}".format(my_csv.size))
