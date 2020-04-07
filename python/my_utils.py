@@ -21,7 +21,7 @@ def open_with_csv(filename, d='\t'):
 #2.a size
 def number_of_records(data_sample):
     return len(data_sample)
-
+ 
 
 #2.b calculate sum
 def calculate_sum(data_sample):
