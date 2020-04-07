@@ -15,7 +15,7 @@
 #In stage five I export the data in different types of graghs such as : Line, Bar, Tables graghs. 
 #I also listed all some barnd avarage price with th lowest price to give idea if there is a discount for the brand.
 #The final Stage, Stage six I export the some graphs to PDF file and edit the titles and axes labels.
-  
+   
 #Requirment:
 #for the R project I installed the following packages:
 #1- xlsx -- to export to excel. 
