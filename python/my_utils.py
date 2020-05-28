@@ -6,7 +6,7 @@
  
 # --------------------------------------
 ## Stage 2 begin
- 
+  
 import csv 
 
 # open a file and return a double list
