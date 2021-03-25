@@ -23,3 +23,4 @@ def plot_bar_graphs(mypdf, data_sample, brand, conditions):
 mypdf = PdfPages('reports.pdf')
 plot_bar_graphs(mypdf, data_from_csv, "brandName", ["DKNY", "Gucci", "Kiton"])
 mypdf.close()
+ 
