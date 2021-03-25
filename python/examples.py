@@ -27,7 +27,7 @@
   
 from my_utils import *
 from numpy_utils import *
-
+ 
 # --------------------------------------
 
 print("\n Projects has four stages as below:\n")
